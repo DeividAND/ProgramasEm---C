@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+       {
+          "name": "C/C++: Executar Programa",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "C:\\msys64",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": true,  // Use esta linha ao invés de "console"
+          "MIMode": "gdb",
+          "miDebuggerPath": "/usr/bin/gdb",
+          "setupCommands": [
+             {
+                "description": "Ativar formatação para gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+             }
+          ],
+          "preLaunchTask": "build",
+          "miDebuggerArgs": [],
+          "logging": {
+             "engineLogging": true
+          }
+       }
+    ]
+ }
